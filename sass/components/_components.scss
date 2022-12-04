@@ -21,10 +21,10 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
-}
 
-.networks-item:not(:first-child) {
-  margin-left: 10px;
+  &-item:not(:first-child) {
+    margin-left: 10px;
+  }
 }
 
 .network {
@@ -39,17 +39,19 @@
 
   color: #afb1b8;
   background-color: var(--main-back-color);
-}
 
-.network:hover,
-.network:focus {
-  background-color: var(--accent-color);
-}
-.network__icon {
-  fill: currentColor;
-  transition: fill 250ms var(--timing-function);
-}
-.network:focus .network__icon,
-.network:hover .network__icon {
-  fill: var(--main-back-color);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+
+  &__icon {
+    fill: currentColor;
+    transition: fill 250ms var(--timing-function);
+  }
+
+  &:focus .network__icon,
+  &:hover .network__icon {
+    fill: var(--main-back-color);
+  }
 }

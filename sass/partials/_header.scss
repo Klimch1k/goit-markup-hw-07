@@ -25,11 +25,12 @@
   padding-left: 0px;
   margin-top: 0px;
   margin-bottom: 0px;
-}
 
-.site-nav .site-nav__item:not(:last-child) {
+&__item:not(:last-child) {
   margin-right: 50px;
 }
+}
+
 
 .site-nav__link {
   transition: color 250ms var(--timing-function);
@@ -42,17 +43,18 @@
   line-height: 1.14x;
   letter-spacing: 0.02em;
   color: var(--title-color);
-}
 
-.site-nav__link:hover,
-.site-nav__link:focus {
+&:hover,
+&:focus {
   color: #2196f3;
 }
+}
+
 .current {
   position: relative;
   color: var(--accent-color);
-}
-.current::after {
+  
+ &::after {
   content: "";
   display: block;
   width: 100%;
@@ -64,16 +66,20 @@
   background-color: #2196f3;
   border-radius: 2px;
 }
+}
+
 /* Телефон та мейл */
 .auth-nav {
   display: flex;
   margin-top: 0px;
   margin-bottom: 0px;
   margin-left: auto;
-}
-.auth-nav__item:not(:first-child) {
+
+  &__item:not(:first-child) {
   margin-left: 50px;
 }
+}
+
 
 .auth-nav__link {
   transition: color 250ms var(--timing-function);
@@ -89,15 +95,17 @@
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-color);
-}
-.auth-nav__link:hover,
-.auth-nav__link:focus {
+
+ &:hover,
+&:focus {
   color: var(--accent-color);
 }
-.auth-nav__link:hover .auth-nav__icon,
-.auth-nav__link:focus .auth-nav__icon {
+ &:hover .auth-nav__icon,
+&:focus .auth-nav__icon {
   fill: var(--accent-color);
 }
+}
+
 .auth-nav__icon {
   fill: currentColor;
   margin-right: 10px;

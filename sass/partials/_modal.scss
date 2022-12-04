@@ -50,11 +50,11 @@
   background: var(--main-back-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-}
 
-.modal-btn__close:hover,
-.modal-btn__close:focus {
+&:hover,
+&:focus {
   fill: var(--accent-color);
+}
 }
 
 .form-modal {
@@ -99,10 +99,10 @@
   outline: none;
 
   transition: border-color 250ms var(--timing-function);
-}
 
-.modal-form__input:focus {
+ &:focus {
   border-color: var(--accent-color);
+}
 }
 
 .modal-form__icon {
@@ -128,26 +128,27 @@
   outline: none;
 
   transition: border-color 250ms var(--timing-function);
-}
 
-.comment__form:focus {
+ &:focus {
   border-color: var(--accent-color);
 }
-.comment__label {
-  display: block;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-}
 
-.comment__form::placeholder {
+&::placeholder {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
 
   color: rgba(117, 117, 117, 0.5);
+}
+}
+
+.comment__label {
+  display: block;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
 }
 
 .acceptance {
@@ -165,16 +166,8 @@
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
-}
-.acceptance__text {
-  margin-right: 7px;
-}
-.acceptance__link {
-  text-decoration-line: underline;
 
-  color: var(--accent-color);
-}
-.acceptance__label::before {
+&::before {
   content: " ";
   display: inline-block;
   width: 16px;
@@ -188,6 +181,16 @@
 
   transition: background-color 250ms var(--timing-function),
     border-color 250ms var(--timing-function);
+}
+}
+
+.acceptance__text {
+  margin-right: 7px;
+}
+.acceptance__link {
+  text-decoration-line: underline;
+
+  color: var(--accent-color);
 }
 
 .acceptance__form:checked + .acceptance__label::before {
@@ -222,8 +225,9 @@
   cursor: pointer;
   border-color: transparent;
   transition: background-color 250ms var(--timing-function);
-}
-.modal__btn:hover,
-.modal__btn:focus {
+
+  &:hover,
+&:focus {
   background-color: #188ce8;
+}
 }

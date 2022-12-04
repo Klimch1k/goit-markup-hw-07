@@ -7,9 +7,10 @@
   padding-left: 0px;
   margin-top: 0px;
   margin-bottom: 0px;
-}
-.servises__item:not(:first-child) {
-  margin-left: 30px;
+
+  &__item:not(:first-child) {
+    margin-left: 30px;
+  }
 }
 
 .thumb {
@@ -34,9 +35,7 @@
   color: var(--main-back-color);
   background: rgba(47, 48, 58, 0.8);
 }
-.servises__title,
-.team__title,
-.clients__title {
+.servises__title {
   margin-bottom: 50px;
 
   font-size: 36px;
