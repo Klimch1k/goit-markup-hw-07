@@ -1,0 +1,36 @@
+.clients {
+  display: flex;
+  align-items: center;
+  padding-left: 0px;
+}
+.clients__item:not(:first-child) {
+  margin-left: 30px;
+}
+
+.clients__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+
+  transition: color 250ms var(--timing-function),
+    border-color 250ms var(--timing-function);
+
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  color: #afb1b8;
+}
+.clients__logo {
+  fill: currentColor;
+  transition: fill 250ms var(--timing-function);
+}
+
+.clients__link:hover .clients__logo,
+.clients__link:focus .clients__logo {
+  fill: var(--accent-color);
+}
+.clients__link:hover,
+.clients__link:focus {
+  border-color: var(--accent-color);
+}
